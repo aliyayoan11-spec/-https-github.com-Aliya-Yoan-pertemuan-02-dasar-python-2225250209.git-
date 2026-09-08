@@ -1,11 +1,14 @@
-# Program Biodata Diri
-nama = input("Masukkan Nama: ")
-nim = input("Masukkan NIM: ")
-kelas = input("Masukkan Kelas: ")
-prodi = input("Masukkan Program Studi: ")
+TAHUN_SEKARANG = 2026
 
-print("\n=== BIODATA MAHASISWA ===")
-print("Nama          :", nama)
-print("NIM           :", nim)
-print("Kelas         :", kelas)
-print("Program Studi :", prodi)
+nama = input("Nama: ")
+nim = input("NIM: ")
+kelas = input("Kelas: ")
+tahun_lahir = int(input("Tahun lahir: "))
+
+umur = TAHUN_SEKARANG - tahun_lahir
+
+print("\n--- KARTU BIODATA ---")
+print(f"Nama  : {nama}")
+print(f"NIM   : {nim}")
+print(f"Kelas : {kelas}")
+print(f"Umur  : sekitar {umur} tahun")

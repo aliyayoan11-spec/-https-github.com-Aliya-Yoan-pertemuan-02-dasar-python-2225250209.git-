@@ -1,11 +1,9 @@
-# Program Konversi Suhu Celcius
-celcius = float(input("Masukkan suhu dalam Celcius (°C): "))
+KELVIN_OFFSET = 273.15
 
-fahrenheit = (celcius * 9/5) + 32
-kelvin = celcius + 273.15
-reamur = celcius * 4/5
+celsius = float(input("Suhu Celsius: "))
 
-print("\n=== HASIL KONVERSI SUHU ===")
-print("Fahrenheit :", fahrenheit, "°F")
-print("Kelvin     :", kelvin, "K")
-print("Reamur     :", reamur, "°R")
+fahrenheit = (9 / 5) * celsius + 32
+kelvin = celsius + KELVIN_OFFSET
+
+print(f"Fahrenheit : {fahrenheit:.2f} °F")
+print(f"Kelvin     : {kelvin:.2f} K")

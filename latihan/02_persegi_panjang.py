@@ -1,10 +1,8 @@
-# Program Menghitung Luas dan Keliling Persegi Panjang
-panjang = float(input("Masukkan panjang: "))
-lebar = float(input("Masukkan lebar: "))
+panjang = float(input("Panjang: "))
+lebar = float(input("Lebar: "))
 
 luas = panjang * lebar
 keliling = 2 * (panjang + lebar)
 
-print("\n=== HASIL PERHITUNGAN ===")
-print("Luas Persegi Panjang     :", luas)
-print("Keliling Persegi Panjang :", keliling)
+print(f"Luas     = {luas:.2f} cm²")
+print(f"Keliling = {keliling:.2f} cm")
